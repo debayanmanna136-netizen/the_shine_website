@@ -26,11 +26,11 @@ export function Hero() {
           <p className="font-sans text-xl md:text-2xl text-white/90 uppercase tracking-widest font-semibold mb-12">
             Expert Hair & Beauty Services
           </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-white text-black font-sans font-bold uppercase tracking-widest text-lg px-10 py-5 hover:bg-gray-200 transition-colors">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mt-6">
+            <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-primary text-white font-sans font-bold uppercase tracking-widest text-lg px-10 py-5 hover:bg-primary-hover transition-colors rounded-full shadow-lg hover:-translate-y-1">
               Book Now
             </a>
-            <a href="#services" className="inline-flex items-center justify-center border-2 border-white text-white font-sans font-bold uppercase tracking-widest text-lg px-10 py-5 hover:bg-white hover:text-black transition-colors">
+            <a href="#services" className="inline-flex items-center justify-center border-2 border-white text-white font-sans font-bold uppercase tracking-widest text-lg px-10 py-5 hover:bg-white hover:text-primary transition-colors rounded-full shadow-lg hover:-translate-y-1">
               View Services
             </a>
           </div>

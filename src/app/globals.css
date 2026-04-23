@@ -1,20 +1,23 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #121212; /* Very Dark Gray / Black */
-  --color-accent: #FFFFFF; /* Pure White */
-  --color-accent-hover: #CCCCCC; /* Light Gray */
-  --color-surface: #1E1E1E; /* Lighter dark for cards */
-  --color-foreground: #F5F5F5; /* Off-white for readability */
-  --color-muted: #A0A0A0;
-  --color-border: #333333;
+  --color-primary: #a855f7; /* Elegant Purple */
+  --color-primary-hover: #9333ea;
+  --color-secondary: #f8c8dc; /* Soft Pink */
+  --color-accent: #d4af37; /* Gold/Beige */
+  --color-accent-hover: #b5952f;
+  --color-surface: #FFFFFF; /* Pure White for cards */
+  --color-background: #FAFAFA; /* Light neutral for main bg */
+  --color-foreground: #1A1A1A; /* Dark gray for text */
+  --color-muted: #6b7280;
+  --color-border: #e5e7eb;
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui;
   --font-serif: var(--font-oswald), ui-serif, Georgia;
 }
 
 :root {
-  --background: var(--color-primary);
+  --background: var(--color-background);
   --foreground: var(--color-foreground);
 }
 

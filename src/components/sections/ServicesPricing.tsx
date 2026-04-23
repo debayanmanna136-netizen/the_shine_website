@@ -57,7 +57,7 @@ export function ServicesPricing() {
 
         {/* CTA after section */}
         <div className="mt-20 text-center">
-          <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-black font-sans font-bold uppercase tracking-widest text-lg px-12 py-5 hover:bg-gray-200 transition-colors">
+          <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-primary font-sans font-bold uppercase tracking-widest text-lg px-12 py-5 rounded-full shadow-lg hover:bg-accent hover:text-white transition-all hover:-translate-y-1">
             Book Appointment
           </a>
         </div>

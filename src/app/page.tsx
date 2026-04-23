@@ -2,6 +2,7 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Hero } from '@/components/sections/Hero';
 import { ServicesPricing } from '@/components/sections/ServicesPricing';
+import { Pricing } from '@/components/sections/Pricing';
 import { About } from '@/components/sections/About';
 import { Gallery } from '@/components/sections/Gallery';
 import { Testimonials } from '@/components/sections/Testimonials';
@@ -17,6 +18,10 @@ export default function Home() {
         
         <ScrollReveal>
           <ServicesPricing />
+        </ScrollReveal>
+
+        <ScrollReveal>
+          <Pricing />
         </ScrollReveal>
         
         <ScrollReveal>
