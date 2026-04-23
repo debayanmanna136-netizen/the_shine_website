@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #121212; /* Very Dark Gray / Black */
+  --color-accent: #D4AF37; /* Soft gold */
+  --color-accent-hover: #E6C252; 
+  --color-surface: #1E1E1E; /* Lighter dark for cards */
+  --color-foreground: #F5F5F5; /* Off-white for readability */
+  --color-muted: #A0A0A0;
+  --color-border: #333333;
+
+  --font-sans: var(--font-poppins), ui-sans-serif, system-ui;
+  --font-serif: var(--font-playfair), ui-serif, Georgia;
+}
+
+:root {
+  --background: var(--color-primary);
+  --foreground: var(--color-foreground);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
