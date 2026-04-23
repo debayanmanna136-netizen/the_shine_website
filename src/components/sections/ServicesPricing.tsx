@@ -31,7 +31,7 @@ export function ServicesPricing() {
 
       <div className="relative z-10 text-center max-w-3xl mx-auto px-6 mb-12">
         <h2 className="font-serif text-5xl md:text-6xl text-foreground mb-6">Our Services</h2>
-        <div className="w-24 h-1 bg-accent mx-auto rounded-full mb-8 shadow-[0_0_15px_rgba(212,175,55,0.4)]"></div>
+        <div className="w-24 h-1 bg-accent mx-auto rounded-full mb-8 shadow-[0_0_15px_rgba(255,255,255,0.4)]"></div>
         <p className="text-foreground/70 font-light text-lg">
           Experience our premium services in a relaxing, modern atmosphere. 
           Expert styling for both men and women.

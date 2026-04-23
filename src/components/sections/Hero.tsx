@@ -26,7 +26,7 @@ export function Hero() {
             Get premium hair & beauty services from expert stylists who care about your results. Walk in feeling tired, walk out feeling unstoppable.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-accent text-primary font-medium text-lg px-8 py-4 rounded hover:bg-accent/90 transition-colors shadow-[0_0_20px_rgba(212,175,55,0.4)] hover:shadow-[0_0_30px_rgba(212,175,55,0.6)]">
+            <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-accent text-primary font-medium text-lg px-8 py-4 rounded hover:bg-accent/90 transition-colors shadow-[0_0_20px_rgba(255,255,255,0.4)] hover:shadow-[0_0_30px_rgba(255,255,255,0.6)]">
               Book on WhatsApp
             </a>
             <a href="#services" className="inline-flex items-center justify-center border border-accent text-accent text-lg px-8 py-4 rounded bg-surface/30 backdrop-blur-md hover:bg-surface/50 transition-colors">
