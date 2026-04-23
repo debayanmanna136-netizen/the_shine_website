@@ -38,26 +38,26 @@ export function Testimonials() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {testimonials.map((item, idx) => (
-            <div key={idx} className="bg-black border border-white/10 p-8 hover:border-white transition-colors duration-300 flex flex-col">
-              <div className="flex text-white mb-6">
+            <div key={idx} className="bg-background text-foreground border border-transparent p-8 hover:border-accent transition-colors duration-300 flex flex-col">
+              <div className="flex text-accent mb-6">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} size={16} fill="currentColor" />
                 ))}
               </div>
-              <h3 className="font-sans font-bold text-xl uppercase tracking-widest mb-4">"Absolutely Stunning"</h3>
-              <p className="text-white/80 font-sans text-lg flex-grow mb-8 leading-relaxed">
+              <h3 className="font-sans font-bold text-xl text-primary uppercase tracking-widest mb-4">"Absolutely Stunning"</h3>
+              <p className="text-foreground/80 font-sans text-lg flex-grow mb-8 leading-relaxed">
                 {item.text}
               </p>
-              <div className="border-t border-white/20 pt-4 mt-auto flex items-center justify-between">
-                <span className="font-sans font-bold uppercase tracking-widest">{item.name}</span>
-                <span className="text-xs uppercase tracking-widest text-white/50 bg-white/10 px-2 py-1">Verified Client</span>
+              <div className="border-t border-border pt-4 mt-auto flex items-center justify-between">
+                <span className="font-sans font-bold uppercase tracking-widest text-primary">{item.name}</span>
+                <span className="text-xs uppercase tracking-widest text-primary/70 bg-primary/10 px-2 py-1">Verified Client</span>
               </div>
             </div>
           ))}
         </div>
 
         <div className="mt-16 text-center">
-          <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-black font-sans font-bold uppercase tracking-widest text-lg px-12 py-5 hover:bg-gray-200 transition-colors">
+          <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" className="inline-block bg-background text-primary font-sans font-bold uppercase tracking-widest text-lg px-12 py-5 hover:bg-accent hover:text-white transition-colors">
             Book Appointment
           </a>
         </div>

@@ -3,12 +3,12 @@ import { Button } from '../ui/Button';
 
 export function About() {
   return (
-    <section id="about" className="py-32 bg-black border-y border-white/10">
+    <section id="about" className="py-32 bg-background border-y border-border">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 text-center">
-        <h2 className="font-serif text-6xl md:text-8xl lg:text-[10rem] uppercase tracking-tighter text-white leading-[0.85] mb-8">
+        <h2 className="font-serif text-6xl md:text-8xl lg:text-[10rem] uppercase tracking-tighter text-primary leading-[0.85] mb-8">
           YOUR STYLE.<br/>YOUR CONFIDENCE.
         </h2>
-        <p className="font-sans text-xl md:text-3xl text-white/80 uppercase tracking-widest font-bold max-w-4xl mx-auto mb-16">
+        <p className="font-sans text-xl md:text-3xl text-foreground/80 uppercase tracking-widest font-bold max-w-4xl mx-auto mb-16">
           We bring together years of expertise to offer personalized grooming experiences. We don't just cut hair; we craft your confidence.
         </p>
         
@@ -19,7 +19,7 @@ export function About() {
             "STRICT HYGIENE",
             "LUXURY EXPERIENCE"
           ].map((point, idx) => (
-            <div key={idx} className="border border-white/20 p-6 flex items-center justify-center text-center hover:bg-white hover:text-black transition-colors duration-300">
+            <div key={idx} className="border border-primary/20 p-6 flex items-center justify-center text-center hover:bg-primary hover:text-white text-foreground transition-colors duration-300">
               <span className="font-sans text-sm md:text-base font-bold uppercase tracking-widest">{point}</span>
             </div>
           ))}

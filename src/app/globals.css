@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #a855f7; /* Elegant Purple */
-  --color-primary-hover: #9333ea;
-  --color-secondary: #f8c8dc; /* Soft Pink */
-  --color-accent: #d4af37; /* Gold/Beige */
-  --color-accent-hover: #b5952f;
+  --color-primary: #722F37; /* Burgundy */
+  --color-primary-hover: #5A1827;
+  --color-secondary: #E8DCC4; /* Beige */
+  --color-accent: #D4AF37; /* Gold */
+  --color-accent-hover: #B5952F;
   --color-surface: #FFFFFF; /* Pure White for cards */
-  --color-background: #FAFAFA; /* Light neutral for main bg */
-  --color-foreground: #1A1A1A; /* Dark gray for text */
-  --color-muted: #6b7280;
-  --color-border: #e5e7eb;
+  --color-background: #FDFBF7; /* Very Light Beige for main bg */
+  --color-foreground: #2A1B1D; /* Dark burgundy-tinted gray for text */
+  --color-muted: #8E7C7E;
+  --color-border: #E8DCC4;
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui;
   --font-serif: var(--font-oswald), ui-serif, Georgia;
