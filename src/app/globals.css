@@ -2,8 +2,8 @@
 
 @theme {
   --color-primary: #121212; /* Very Dark Gray / Black */
-  --color-accent: #D4AF37; /* Soft gold */
-  --color-accent-hover: #E6C252; 
+  --color-accent: #FFFFFF; /* Pure White */
+  --color-accent-hover: #CCCCCC; /* Light Gray */
   --color-surface: #1E1E1E; /* Lighter dark for cards */
   --color-foreground: #F5F5F5; /* Off-white for readability */
   --color-muted: #A0A0A0;

@@ -65,9 +65,6 @@ export function ServicesPricing() {
               </div>
             ))}
           </div>
-          <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20book%20a%20men's%20service" target="_blank" rel="noopener noreferrer" className="block text-center w-full bg-transparent border border-accent text-accent font-medium text-base px-8 py-3 rounded hover:bg-accent hover:text-primary transition-all duration-300">
-            Book Men's Service
-          </a>
         </div>
 
         {/* Ladies Section */}
@@ -95,9 +92,6 @@ export function ServicesPricing() {
               </div>
             ))}
           </div>
-          <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20book%20a%20women's%20service" target="_blank" rel="noopener noreferrer" className="block text-center w-full bg-transparent border border-accent text-accent font-medium text-base px-8 py-3 rounded hover:bg-accent hover:text-primary transition-all duration-300">
-            Book Women's Service
-          </a>
         </div>
 
       </div>

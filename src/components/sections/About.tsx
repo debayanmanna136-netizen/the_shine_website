@@ -38,10 +38,6 @@ export function About() {
                 </li>
               ))}
             </ul>
-
-            <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-accent text-primary font-medium text-base px-8 py-3 rounded hover:bg-accent/90 transition-colors shadow-lg">
-              Book Your Session
-            </a>
           </div>
 
         </div>
