@@ -3,43 +3,26 @@ import { Button } from '../ui/Button';
 
 export function About() {
   return (
-    <section id="about" className="py-24 bg-primary">
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <div className="flex flex-col lg:flex-row items-center gap-16">
-          
-          {/* Image Side */}
-          <div className="w-full lg:w-1/2 relative group">
-            <div className="absolute inset-0 bg-accent/10 -translate-x-4 translate-y-4 rounded-xl transition-transform duration-500 group-hover:-translate-x-6 group-hover:translate-y-6"></div>
-            <img 
-              src="/images/about_salon.png" 
-              alt="Salon Interior" 
-              className="relative z-10 w-full h-[500px] object-cover rounded-xl shadow-lg"
-            />
-          </div>
-
-          {/* Text Side */}
-          <div className="w-full lg:w-1/2">
-            <h2 className="font-serif text-4xl text-foreground mb-6">Why Choose The Shine?</h2>
-            <p className="text-foreground/70 font-light text-lg mb-6 leading-relaxed">
-              We bring together years of expertise and a passion for aesthetics to offer personalized grooming experiences. We don't just cut hair; we craft your confidence.
-            </p>
-            
-            <ul className="space-y-4 mb-8">
-              {[
-                "Highly experienced & trained stylists",
-                "Strict hygiene and sanitization standards",
-                "Premium salon products & treatments",
-                "Affordable luxury pricing",
-                "Personalized consultation for every client"
-              ].map((point, idx) => (
-                <li key={idx} className="flex items-center text-foreground/80 font-light">
-                  <div className="w-2 h-2 rounded-full bg-accent mr-4"></div>
-                  {point}
-                </li>
-              ))}
-            </ul>
-          </div>
-
+    <section id="about" className="py-32 bg-black border-y border-white/10">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12 text-center">
+        <h2 className="font-serif text-6xl md:text-8xl lg:text-[10rem] uppercase tracking-tighter text-white leading-[0.85] mb-8">
+          YOUR STYLE.<br/>YOUR CONFIDENCE.
+        </h2>
+        <p className="font-sans text-xl md:text-3xl text-white/80 uppercase tracking-widest font-bold max-w-4xl mx-auto mb-16">
+          We bring together years of expertise to offer personalized grooming experiences. We don't just cut hair; we craft your confidence.
+        </p>
+        
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto mb-16">
+          {[
+            "EXPERT STYLISTS",
+            "PREMIUM PRODUCTS",
+            "STRICT HYGIENE",
+            "LUXURY EXPERIENCE"
+          ].map((point, idx) => (
+            <div key={idx} className="border border-white/20 p-6 flex items-center justify-center text-center hover:bg-white hover:text-black transition-colors duration-300">
+              <span className="font-sans text-sm md:text-base font-bold uppercase tracking-widest">{point}</span>
+            </div>
+          ))}
         </div>
       </div>
     </section>

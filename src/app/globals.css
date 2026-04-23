@@ -9,8 +9,8 @@
   --color-muted: #A0A0A0;
   --color-border: #333333;
 
-  --font-sans: var(--font-poppins), ui-sans-serif, system-ui;
-  --font-serif: var(--font-playfair), ui-serif, Georgia;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui;
+  --font-serif: var(--font-oswald), ui-serif, Georgia;
 }
 
 :root {

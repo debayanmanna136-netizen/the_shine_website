@@ -32,73 +32,70 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-primary pt-24 pb-12 border-t border-white/5 relative overflow-hidden">
-      {/* Subtle Background Glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-accent/5 blur-[120px] rounded-full pointer-events-none"></div>
-
-      <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 relative z-10">
+    <footer className="bg-black pt-24 pb-12 border-t border-white/20 text-white">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
         
         {/* Brand Column */}
         <div className="space-y-6">
-          <h3 className="font-serif text-3xl text-accent tracking-wide">The Shine</h3>
-          <p className="text-foreground/70 leading-relaxed font-light text-sm pr-4">
-            Where your style meets our passion. We provide premium salon and barbershop services focused on your beauty, wellness, and distinct elegance.
+          <h3 className="font-serif text-5xl tracking-tighter uppercase font-bold">THE SHINE</h3>
+          <p className="font-sans text-white/70 uppercase tracking-widest text-sm leading-relaxed pr-4 font-bold">
+            Expert styling. Premium care. Unapologetic confidence.
           </p>
-          <div className="flex space-x-4 pt-2">
-            <a href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-accent hover:border-accent hover:text-white text-foreground transition-all duration-300 transform hover:-translate-y-1">
-              <InstagramIcon size={18} />
+          <div className="flex space-x-4 pt-4">
+            <a href="#" className="w-12 h-12 border border-white flex items-center justify-center hover:bg-white hover:text-black transition-colors duration-300">
+              <InstagramIcon size={20} />
             </a>
-            <a href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-accent hover:border-accent hover:text-white text-foreground transition-all duration-300 transform hover:-translate-y-1">
-              <FacebookIcon size={18} />
+            <a href="#" className="w-12 h-12 border border-white flex items-center justify-center hover:bg-white hover:text-black transition-colors duration-300">
+              <FacebookIcon size={20} />
             </a>
-            <a href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-accent hover:border-accent hover:text-white text-foreground transition-all duration-300 transform hover:-translate-y-1">
-              <TwitterIcon size={18} />
+            <a href="#" className="w-12 h-12 border border-white flex items-center justify-center hover:bg-white hover:text-black transition-colors duration-300">
+              <TwitterIcon size={20} />
             </a>
           </div>
         </div>
 
         {/* Explore Links */}
         <div>
-          <h3 className="font-serif text-xl mb-6 text-foreground">Explore</h3>
+          <h3 className="font-sans text-xl mb-8 font-bold uppercase tracking-widest border-b border-white/20 pb-4">Explore</h3>
           <ul className="space-y-4">
-            <li><a href="#services" className="text-foreground/70 hover:text-accent hover:pl-2 transition-all duration-300 inline-block">Our Services</a></li>
-            <li><a href="#about" className="text-foreground/70 hover:text-accent hover:pl-2 transition-all duration-300 inline-block">About Us</a></li>
-            <li><a href="#gallery" className="text-foreground/70 hover:text-accent hover:pl-2 transition-all duration-300 inline-block">Style Gallery</a></li>
-            <li><a href="#testimonials" className="text-foreground/70 hover:text-accent hover:pl-2 transition-all duration-300 inline-block">Client Reviews</a></li>
+            <li><a href="#services" className="font-sans uppercase tracking-widest text-sm text-white/70 hover:text-white hover:translate-x-2 transition-transform inline-block font-bold">Our Services</a></li>
+            <li><a href="#about" className="font-sans uppercase tracking-widest text-sm text-white/70 hover:text-white hover:translate-x-2 transition-transform inline-block font-bold">About Us</a></li>
+            <li><a href="#gallery" className="font-sans uppercase tracking-widest text-sm text-white/70 hover:text-white hover:translate-x-2 transition-transform inline-block font-bold">Style Gallery</a></li>
+            <li><a href="#testimonials" className="font-sans uppercase tracking-widest text-sm text-white/70 hover:text-white hover:translate-x-2 transition-transform inline-block font-bold">Client Reviews</a></li>
           </ul>
         </div>
 
         {/* Contact Info */}
         <div>
-          <h3 className="font-serif text-xl mb-6 text-foreground">Contact</h3>
-          <ul className="space-y-5">
-            <li className="flex items-start text-foreground/70 group">
-              <MapPin size={20} className="mr-3 text-accent mt-0.5 group-hover:-translate-y-1 transition-transform" />
-              <span className="font-light">123 Elegance Avenue,<br />Mumbai, Maharashtra 400001</span>
+          <h3 className="font-sans text-xl mb-8 font-bold uppercase tracking-widest border-b border-white/20 pb-4">Contact</h3>
+          <ul className="space-y-6">
+            <li className="flex items-start text-white/70">
+              <MapPin size={20} className="mr-4 text-white shrink-0" />
+              <span className="font-sans text-sm uppercase tracking-widest font-bold">123 Beauty Blvd,<br />New York, NY 10001</span>
             </li>
-            <li className="flex items-center text-foreground/70 group">
-              <Phone size={20} className="mr-3 text-accent group-hover:rotate-12 transition-transform" />
-              <span className="font-light">+91 98765 43210</span>
+            <li className="flex items-center text-white/70">
+              <Phone size={20} className="mr-4 text-white shrink-0" />
+              <span className="font-sans text-sm uppercase tracking-widest font-bold">+1 (555) 123-4567</span>
             </li>
-            <li className="flex items-center text-foreground/70 group">
-              <Mail size={20} className="mr-3 text-accent group-hover:scale-110 transition-transform" />
-              <span className="font-light">hello@theshinesalon.com</span>
+            <li className="flex items-center text-white/70">
+              <Mail size={20} className="mr-4 text-white shrink-0" />
+              <span className="font-sans text-sm uppercase tracking-widest font-bold">INFO@THESHINE.COM</span>
             </li>
           </ul>
         </div>
 
         {/* Instagram Grid */}
         <div>
-          <h3 className="font-serif text-xl mb-6 text-foreground">Follow Us</h3>
+          <h3 className="font-sans text-xl mb-8 font-bold uppercase tracking-widest border-b border-white/20 pb-4">Follow Us</h3>
           <div className="grid grid-cols-3 gap-2">
             {igImages.map((img, idx) => (
-              <a key={idx} href="#" className="relative group rounded-md overflow-hidden aspect-square block">
+              <a key={idx} href="#" className="relative group overflow-hidden aspect-square block bg-surface">
                 <div 
-                  className="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-500" 
+                  className="absolute inset-0 bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-500" 
                   style={{ backgroundImage: `url(${img})` }}
                 ></div>
-                <div className="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <InstagramIcon size={18} className="text-white" />
+                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <InstagramIcon size={20} className="text-white" />
                 </div>
               </a>
             ))}
@@ -108,11 +105,11 @@ export function Footer() {
       </div>
       
       {/* Copyright Bar */}
-      <div className="max-w-7xl mx-auto px-6 md:px-12 mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-foreground/50 text-sm font-light">
-        <p>&copy; {new Date().getFullYear()} The Shine Salon. All rights reserved.</p>
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12 mt-20 pt-8 border-t border-white/20 flex flex-col md:flex-row justify-between items-center text-white/50 text-xs font-bold uppercase tracking-widest font-sans">
+        <p>&copy; {new Date().getFullYear()} THE SHINE. ALL RIGHTS RESERVED.</p>
         <div className="flex space-x-6 mt-4 md:mt-0">
-          <a href="#" className="hover:text-accent transition-colors">Privacy Policy</a>
-          <a href="#" className="hover:text-accent transition-colors">Terms of Service</a>
+          <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
         </div>
       </div>
     </footer>

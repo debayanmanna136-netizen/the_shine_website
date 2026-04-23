@@ -1,99 +1,66 @@
 import React from 'react';
 
 export function ServicesPricing() {
-  const gentsServices = [
-    { name: "Hair Cut", price: "₹80", popular: true },
-    { name: "Beard", price: "₹40" },
-    { name: "Shaving", price: "₹50" },
-    { name: "Spa", price: "₹200 / ₹300 / ₹400" },
-    { name: "Straightening", price: "₹800 - ₹1000" },
-    { name: "Global Colour", price: "₹300 / ₹400" },
-    { name: "Highlight", price: "₹600 - ₹1000" },
-    { name: "Perming", price: "₹1000 - ₹1500" },
-  ];
-
-  const ladiesServices = [
-    { name: "Shampoo + Haircut + Blowdry", price: "₹200", popular: true },
-    { name: "Hair Spa", price: "₹500 / ₹800 / ₹1000" },
-    { name: "Threading", price: "₹30" },
-    { name: "Global Colour", price: "₹1200 - ₹1500" },
-    { name: "Highlight", price: "₹200 per stick" },
-    { name: "Straightening / Smoothening", price: "₹3000 - ₹3500", popular: true },
-    { name: "Hair Treatment", price: "₹3000 / ₹4000 / ₹5000" },
-    { name: "Dandruff Treatment", price: "₹800 + ₹1000" },
-    { name: "Ozone + Hairfall Treatment", price: "₹500 / ₹800" },
+  const collections = [
+    {
+      title: "HAIRCUT & STYLING",
+      image: "/images/gallery_1.png",
+      link: "#"
+    },
+    {
+      title: "COLOUR & HIGHLIGHTS",
+      image: "/images/gallery_2.png",
+      link: "#"
+    },
+    {
+      title: "HAIR SPA & TREATMENTS",
+      image: "/images/gallery_3.png",
+      link: "#"
+    },
+    {
+      title: "BRIDAL & MAKEUP",
+      image: "/images/gallery_4.png",
+      link: "#"
+    }
   ];
 
   return (
-    <div id="services" className="w-full flex flex-col gap-16 py-24 bg-primary relative">
-      {/* Subtle background glow effect for theme visibility */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-[400px] bg-accent/5 blur-[150px] rounded-full pointer-events-none"></div>
+    <div id="services" className="w-full py-24 bg-primary text-white">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12">
+        <h2 className="font-serif text-5xl md:text-7xl uppercase tracking-tighter mb-12 text-center md:text-left">
+          Our Collections
+        </h2>
 
-      <div className="relative z-10 text-center max-w-3xl mx-auto px-6 mb-12">
-        <h2 className="font-serif text-5xl md:text-6xl text-foreground mb-6">Our Services</h2>
-        <div className="w-24 h-1 bg-accent mx-auto rounded-full mb-8 shadow-[0_0_15px_rgba(255,255,255,0.4)]"></div>
-        <p className="text-foreground/70 font-light text-lg">
-          Experience our premium services in a relaxing, modern atmosphere. 
-          Expert styling for both men and women.
-        </p>
-      </div>
-
-      <div className="relative z-10 max-w-7xl mx-auto w-full px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
-        
-        {/* Gents Section */}
-        <div className="flex flex-col bg-surface/30 p-8 md:p-12 rounded-[2rem] border border-white/5 shadow-2xl">
-          <div className="mb-10 text-center lg:text-left">
-            <h3 className="font-serif text-4xl md:text-5xl text-accent mb-4">For Men</h3>
-            <p className="text-foreground/60 font-light text-sm uppercase tracking-widest">Precision Grooming</p>
-          </div>
-
-          <div className="flex flex-col gap-6 mb-10">
-            {gentsServices.map((item, idx) => (
-              <div key={idx} className="group flex flex-col sm:flex-row sm:items-end border-b border-white/5 pb-4 hover:border-accent/40 transition-colors duration-300">
-                <div className="flex items-center">
-                  <h4 className="font-serif text-xl md:text-2xl text-foreground/90 group-hover:text-white transition-colors duration-300 pr-2">
-                    {item.name}
-                  </h4>
-                  {item.popular && (
-                    <span className="text-[10px] uppercase tracking-wider bg-accent/20 text-accent px-2 py-1 rounded-sm ml-2">Popular</span>
-                  )}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {collections.map((item, idx) => (
+            <a key={idx} href={item.link} className="group relative block aspect-[3/4] overflow-hidden bg-surface">
+              <img 
+                src={item.image} 
+                alt={item.title} 
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/30 transition-colors duration-500 group-hover:bg-black/50"></div>
+              
+              <div className="absolute inset-0 p-6 flex flex-col justify-end">
+                <h3 className="font-serif text-3xl uppercase tracking-tighter text-white translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                  {item.title}
+                </h3>
+                <div className="h-0 opacity-0 group-hover:h-auto group-hover:opacity-100 group-hover:mt-4 transition-all duration-500">
+                  <span className="font-sans text-sm uppercase tracking-widest font-bold border-b-2 border-white pb-1">
+                    Explore
+                  </span>
                 </div>
-                <div className="flex-grow border-b-2 border-dotted border-white/10 mb-2 mx-4 group-hover:border-accent/30 transition-colors duration-300 hidden sm:block"></div>
-                <p className="font-medium text-accent text-lg md:text-xl whitespace-nowrap mt-2 sm:mt-0">
-                  {item.price}
-                </p>
               </div>
-            ))}
-          </div>
+            </a>
+          ))}
         </div>
 
-        {/* Ladies Section */}
-        <div className="flex flex-col bg-surface/30 p-8 md:p-12 rounded-[2rem] border border-white/5 shadow-2xl">
-          <div className="mb-10 text-center lg:text-left">
-            <h3 className="font-serif text-4xl md:text-5xl text-accent mb-4">For Women</h3>
-            <p className="text-foreground/60 font-light text-sm uppercase tracking-widest">Ultimate Transformation</p>
-          </div>
-
-          <div className="flex flex-col gap-6 mb-10">
-            {ladiesServices.map((item, idx) => (
-              <div key={idx} className="group flex flex-col sm:flex-row sm:items-end border-b border-white/5 pb-4 hover:border-accent/40 transition-colors duration-300">
-                <div className="flex items-center">
-                  <h4 className="font-serif text-xl md:text-2xl text-foreground/90 group-hover:text-white transition-colors duration-300 pr-2">
-                    {item.name}
-                  </h4>
-                  {item.popular && (
-                    <span className="text-[10px] uppercase tracking-wider bg-accent/20 text-accent px-2 py-1 rounded-sm ml-2">Popular</span>
-                  )}
-                </div>
-                <div className="flex-grow border-b-2 border-dotted border-white/10 mb-2 mx-4 group-hover:border-accent/30 transition-colors duration-300 hidden sm:block"></div>
-                <p className="font-medium text-accent text-lg md:text-xl whitespace-nowrap mt-2 sm:mt-0">
-                  {item.price}
-                </p>
-              </div>
-            ))}
-          </div>
+        {/* CTA after section */}
+        <div className="mt-20 text-center">
+          <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-black font-sans font-bold uppercase tracking-widest text-lg px-12 py-5 hover:bg-gray-200 transition-colors">
+            Book Appointment
+          </a>
         </div>
-
       </div>
     </div>
   );

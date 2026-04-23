@@ -22,35 +22,43 @@ export function Testimonials() {
   ];
 
   return (
-    <section id="testimonials" className="py-24 bg-surface">
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl text-foreground mb-4">Client Love</h2>
-          <div className="w-16 h-1 bg-accent mx-auto mb-6 rounded-full"></div>
+    <section id="testimonials" className="py-24 bg-primary text-white">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12">
+        <div className="mb-16 flex flex-col md:flex-row md:items-end justify-between border-b border-white/20 pb-8">
+          <div>
+            <h2 className="font-serif text-5xl md:text-7xl uppercase tracking-tighter mb-2">Real Reviews</h2>
+            <p className="font-sans text-xl uppercase tracking-widest text-white/70 font-bold">5-Star Experiences</p>
+          </div>
+          <div className="mt-8 md:mt-0 flex gap-2 text-white">
+            {[...Array(5)].map((_, i) => (
+              <Star key={i} size={32} fill="currentColor" />
+            ))}
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {testimonials.map((item, idx) => (
-            <Card key={idx} className="flex flex-col h-full bg-primary/30">
-              <div className="flex text-accent mb-6">
+            <div key={idx} className="bg-black border border-white/10 p-8 hover:border-white transition-colors duration-300 flex flex-col">
+              <div className="flex text-white mb-6">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} size={18} fill="currentColor" />
+                  <Star key={i} size={16} fill="currentColor" />
                 ))}
               </div>
-              <p className="text-foreground/80 font-light italic flex-grow mb-8 leading-relaxed">
-                "{item.text}"
+              <h3 className="font-sans font-bold text-xl uppercase tracking-widest mb-4">"Absolutely Stunning"</h3>
+              <p className="text-white/80 font-sans text-lg flex-grow mb-8 leading-relaxed">
+                {item.text}
               </p>
-              <div>
-                <h4 className="font-medium text-foreground tracking-wide">{item.name}</h4>
-                <p className="text-sm text-foreground/50">{item.role}</p>
+              <div className="border-t border-white/20 pt-4 mt-auto flex items-center justify-between">
+                <span className="font-sans font-bold uppercase tracking-widest">{item.name}</span>
+                <span className="text-xs uppercase tracking-widest text-white/50 bg-white/10 px-2 py-1">Verified Client</span>
               </div>
-            </Card>
+            </div>
           ))}
         </div>
 
         <div className="mt-16 text-center">
-          <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-accent text-primary font-medium text-lg px-8 py-4 rounded hover:bg-accent/90 transition-colors shadow-xl hover:shadow-accent/20">
-            Book Your Appointment Today
+          <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-black font-sans font-bold uppercase tracking-widest text-lg px-12 py-5 hover:bg-gray-200 transition-colors">
+            Book Appointment
           </a>
         </div>
       </div>
