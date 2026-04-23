@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Poppins } from "next/font/google";
 import "./globals.css";
+import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -28,7 +29,10 @@ export default function RootLayout({
       lang="en"
       className={`${playfair.variable} ${poppins.variable} antialiased scroll-smooth`}
     >
-      <body className="min-h-screen flex flex-col font-sans bg-primary text-foreground">{children}</body>
+      <body className="min-h-screen flex flex-col font-sans bg-primary text-foreground">
+        {children}
+        <WhatsAppButton />
+      </body>
     </html>
   );
 }

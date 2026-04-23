@@ -19,14 +19,29 @@ export function About() {
 
           {/* Text Side */}
           <div className="w-full lg:w-1/2">
-            <h2 className="font-serif text-4xl text-foreground mb-6">About Our Salon</h2>
+            <h2 className="font-serif text-4xl text-foreground mb-6">Why Choose The Shine?</h2>
             <p className="text-foreground/70 font-light text-lg mb-6 leading-relaxed">
-              At The Shine Hair and Beauty, we believe that true elegance lies in feeling entirely comfortable in your own skin. Situated in the heart of the city, our salon provides an oasis of styling, beauty, and relaxation.
+              We bring together years of expertise and a passion for aesthetics to offer personalized grooming experiences. We don't just cut hair; we craft your confidence.
             </p>
-            <p className="text-foreground/70 font-light text-lg mb-8 leading-relaxed">
-              We bring together years of expertise and a passion for aesthetics to offer personalized grooming experiences. Whether you seek a classic trim, a rejuvenating skin treatment, or an entirely new look, our expert team is dedicated to helping you shine from the inside out.
-            </p>
-            <Button variant="primary">Read Our Story</Button>
+            
+            <ul className="space-y-4 mb-8">
+              {[
+                "Highly experienced & trained stylists",
+                "Strict hygiene and sanitization standards",
+                "Premium salon products & treatments",
+                "Affordable luxury pricing",
+                "Personalized consultation for every client"
+              ].map((point, idx) => (
+                <li key={idx} className="flex items-center text-foreground/80 font-light">
+                  <div className="w-2 h-2 rounded-full bg-accent mr-4"></div>
+                  {point}
+                </li>
+              ))}
+            </ul>
+
+            <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-accent text-primary font-medium text-base px-8 py-3 rounded hover:bg-accent/90 transition-colors shadow-lg">
+              Book Your Session
+            </a>
           </div>
 
         </div>

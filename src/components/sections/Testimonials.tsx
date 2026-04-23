@@ -47,6 +47,12 @@ export function Testimonials() {
             </Card>
           ))}
         </div>
+
+        <div className="mt-16 text-center">
+          <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-accent text-primary font-medium text-lg px-8 py-4 rounded hover:bg-accent/90 transition-colors shadow-xl hover:shadow-accent/20">
+            Book Your Appointment Today
+          </a>
+        </div>
       </div>
     </section>
   );
